@@ -1,0 +1,96 @@
+<ul class="nav nav-tabs">
+    <li class="nav-item">
+        <a href="#" class="nav-link active"><img src="Image/jordan.png" style="width: 40px;" alt=""></a>
+    </li>
+    <li class="nav-item">
+        <a href="#" class="nav-link jd-nav-bar">Store</a>
+    </li>
+    <li class="nav-item">
+        <a href="#" class="nav-link jd-nav-bar" data-toggle="modal"
+        data-target="#modelId">Login</a>
+    </li>
+</ul>
+<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <a class="navbar-brand" href="#!home"><img src="Image/nike.png" alt="" style="width: 70px;"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link" href="#!product"><ion-icon name="list-outline"></ion-icon> Product</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><ion-icon name="call-outline"></ion-icon> CONTACT</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><ion-icon name="call-outline"></ion-icon> COMMENTS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><ion-icon name="help-outline"></ion-icon> FAQ</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    <ion-icon name="person-outline"></ion-icon>ACCOUNT
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#" data-toggle="modal"
+                    data-target="#modelId">LOGIN</a>
+                    <a class="dropdown-item" href="#">FORGOT PASSWORD</a>
+                    <a class="dropdown-item" href="#">REGISTER</a>
+                    <HR>
+                    </HR>
+                    <a class="dropdown-item" href="#">LOGOUT</a>
+                    <a class="dropdown-item" href="#">CHANGE PASSWORD</a>
+                    <a class="dropdown-item" href="#">UPDATE PROFILE</a>
+                    <HR>
+                    </HR>
+                    <a class="dropdown-item" href="#">ORDERS</a>
+                    <a class="dropdown-item" href="#">PURCHASED GOODS</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <form class="form-inline">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" ng-model="s">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="button" ng-click="search()">Search</button>
+    </form>
+</nav>
+<div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
+                    aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title"><ion-icon name="list-outline"></ion-icon>Login
+                                </h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form name="formLogin">
+                                    <div class="form-group">
+                                      <label for="exampleInputEmail1">UserName</label>
+                                      <input type="text"  ng-model="user.name" class="form-control" name="txtUser" id="exampleInputEmail1" placeholder="Enter an account name" required >
+                                      <span class="text-danger" ng-show="formLogin.txtUser.$invalid">Please enter your account name</span>
+                                    </div>
+                                    <div class="form-group">
+                                      <label for="exampleInputPassword1">Password</label>
+                                      <input type="password" ng-model="user.pass" class="form-control" name="txtpass" id="exampleInputPassword1" placeholder="Enter password" required>
+                                      <span class="text-danger" ng-show="formLogin.txtpass.$invalid">Please enter a password of more than 8 characters</span>
+                                    </div>
+                                    <div class="form-group form-check">
+                                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                      <label class="form-check-label" for="exampleCheck1">Remember Me?</label>
+                                    </div>
+                        
+                                  </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary btncss" ng-show="formLogin.$valid" data-dismiss="modal">login</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>

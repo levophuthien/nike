@@ -1,0 +1,229 @@
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /* position: relative; */
+}
+header {
+  margin-bottom: 50px;
+}
+.banner img {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+.chuchay {
+  background-color: rgb(237, 237, 237);
+  line-height: 50px;
+  font-size: larger;
+}
+.video {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+}
+.content {
+  text-align: center;
+}
+.jd-nav-bar{
+  color: #000;
+  
+}
+.jd-nav-bar:hover{
+  color: black;
+  box-shadow: 1px;
+}
+/* .btn-hd {
+  background-color: black;
+  color: white;
+  border-radius: 50px;
+}
+.btn-hd:hover {
+  background-color: rgb(226, 226, 226);
+  color: black;
+} */
+.content-product {
+  color: black;
+}
+.content-product:hover {
+  color: black;
+  text-decoration: none;
+}
+.product-content {
+  margin-bottom: 25px;
+}
+.slide {
+  margin-bottom: 10px;
+  background-color: rgb(237, 237, 237);
+}
+.information-product li {
+  margin: 10px;
+  line-height: 35px;
+  font-size: 20px;
+  list-style: none;
+}
+.ctsp {
+  margin: 10px;
+  width: 150px;
+}
+.ctsp:hover{
+  padding: 10px;
+  box-shadow: inset 5px;
+}
+footer .card{
+  background-color: black;
+}
+.footer-help{
+  color: white;
+}
+.imgproduct{
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+}
+.footer-help:hover{
+  color: white;
+  text-decoration: none;
+}
+article li a{
+  color: black;
+}
+.btnnew{
+  background-color: black;
+  color: white;
+}
+.btnnew:hover{
+  background-color: rgb(226, 226, 226);
+  color: black;
+}
+.gearup{
+  width: 95%;
+
+}
+.gearup img{
+ max-width: 100%;
+  max-height: 100%;
+  margin: 2%;
+}
+.morenike{
+  width: 95%;
+
+}
+.morenike img{
+  width: 100%;
+  margin: 20px;
+}
+.title{
+  margin-left: 3%;
+}
+.btn-hd {
+
+  justify-items: center;
+  transform: translateY(-0%) translateX(-0%);
+  border: 1px solid #000;
+  overflow: hidden;
+  border-radius: 50px;
+	color: #000;
+	background: none;
+	cursor: pointer;
+	display: inline-block;
+	outline: none;
+	-webkit-transition: all 0.3s cubic-bezier(0.770, 0.000, 0.175, 1.000);
+	-moz-transition: all 0.3s cubic-bezier(0.770, 0.000, 0.175, 1.000);
+	transition: all 0.3s cubic-bezier(0.770, 0.000, 0.175, 1.000);
+}
+
+
+.btn-hd:after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	-webkit-transition: all 0.3s cubic-bezier(0.770, 0.000, 0.175, 1.000);
+	-moz-transition: all 0.3s cubic-bezier(0.770, 0.000, 0.175, 1.000);
+	transition: all 0.3s cubic-bezier(0.770, 0.000, 0.175, 1.000);
+  width: 0%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: #000;
+}
+
+.btn-hd:hover,
+.btn-hd:active {
+	color: white;
+}
+.btn-hd:hover:after,
+.btn-hd:active:after {
+	width: 100%;
+}
+.btn-fil {
+
+  justify-items: center;
+  transform: translateY(-0%) translateX(-0%);
+  border: 1px solid #000;
+  overflow: hidden;
+
+	color: #000;
+	background: none;
+	cursor: pointer;
+	display: inline-block;
+	outline: none;
+	-webkit-transition: all 0.3s cubic-bezier(0.770, 0.000, 0.175, 1.000);
+	-moz-transition: all 0.3s cubic-bezier(0.770, 0.000, 0.175, 1.000);
+	transition: all 0.3s cubic-bezier(0.770, 0.000, 0.175, 1.000);
+}
+
+
+.btn-fil:after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	-webkit-transition: all 0.3s cubic-bezier(0.770, 0.000, 0.175, 1.000);
+	-moz-transition: all 0.3s cubic-bezier(0.770, 0.000, 0.175, 1.000);
+	transition: all 0.3s cubic-bezier(0.770, 0.000, 0.175, 1.000);
+  width: 0%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: #000;
+}
+
+.btn-fil:hover,
+.btn-fil:active {
+	color: white;
+}
+.btn-fil:hover:after,
+.btn-fil:active:after {
+	width: 100%;
+}
+section{
+  justify-items: center;
+  transform: translateY(-0%) translateX(-0%);
+  border: 1px solid #000;
+  overflow: hidden;
+  border-radius: 50px;
+	color: #000;
+	background: none;
+	cursor: pointer;
+	display: inline-block;
+	outline: none;
+	-webkit-transition: all 0.3s cubic-bezier(0.770, 0.000, 0.175, 1.000);
+	-moz-transition: all 0.3s cubic-bezier(0.770, 0.000, 0.175, 1.000);
+	transition: all 0.3s cubic-bezier(0.770, 0.000, 0.175, 1.000);
+}
+.color{
+  margin: 10px;
+height: 30px;
+  width: 30px;
+  list-style-type: none;
+  border-radius: 100%;
+  border: solid 1px;
+  border-color: gray;
+}
+a p{
+  color: black;
+}
+a p:hover{
+  color: black;
+  text-decoration: none;
+}

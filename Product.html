@@ -1,0 +1,191 @@
+<div class="than" style="width: 97%; margin-left: 2%;margin-right: 1%;" ng-controller="productCtrl">
+    <div class="row">
+        <!-- Nav tabs -->
+        <div class="list-group col-sm-3">
+            <button type="button" class=" btn-fil" data-toggle="modal"
+                data-target="#modelId">
+                Filter
+            </button>
+            <select class="btn btn-dark type" ng-model="chose" ng-options="x for x in choose ">
+            </select>
+            <button class=" btn-fil" ng-click="sort()">Lọc Dữ Liệu</button>
+            <form class="form-inline">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" ng-model="s">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="button" ng-click="search()">Search</button>
+            </form>
+            <!-- Modal -->
+            <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title"><ion-icon name="list-outline"></ion-icon>Bảng Nhập Hàng Tháng 1
+                            </h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form action="#">
+                                <div class="row">
+                                    <div class="form-groups col-sm-6">
+                                        <label for="">Mã Sản Phẩm:</label>
+                                        <input type="text" class="form-control" placeholder="Mã Sản Phẩm">
+                                    </div>
+                                    <div class="form-groups col-sm-6">
+                                        <label for="">Tên Sản Phẩm:</label>
+                                        <input type="text" class="form-control" placeholder="Tên Sản Phẩm">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-groups col-sm-6">
+                                        <label for="">Brand:</label>
+                                        <select name="" id="" class="form-control">
+                                            <option value=""></option>
+                                            <option value="">Jordan</option>
+                                            <option value="">AirForce1</option>
+                                            <option value="">Converse</option>
+                                        </select>
+                                        </option>
+                                    </div>
+                                    <div class="form-groups col-sm-6">
+                                        <label for="">Giá:</label>
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text">$</span>
+                                            </div>
+                                            <input class="form-control" type="text" name="" placeholder="Giá"
+                                                aria-label="Recipient's ">
+                                            <div class="input-group-append">
+                                                <span class="input-group-text">.00</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-groups col-sm-6">
+                                        <label for="">Số Lượng:</label>
+                                        <input type="text" class="form-control" placeholder="Số Lượng">
+                                    </div>
+                                    <div class="form-groups col-sm-6">
+                                        <label for="">Size:</label>
+                                        <input type="text" class="form-control" placeholder="Size">
+                                    </div>
+                                    <div class="form-groups col-sm-12">
+                                        <label for="">Ghi Chú:</label>
+                                        <textarea class="form-control" rows="3" placeholder="Ghi Chú"></textarea>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary btncss">Save</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#!jordan" class="list-group-item list-group-item-action " data-toggle="collapse"
+                aria-expanded="false"><b  ng-click="jordan()">Jordan</b><span class="badge badge-dark" > 6</span></a>
+            <ul class="list-group card-collapse" id="jordan">
+                <li class="list-group-item ">Air Jordan 1 Low SE</li>
+                <li class="list-group-item ">Air Jordan 1 Mid SE Craft <span class="badge badge-warning">Hot</span>
+                </li>
+                <li class="list-group-item ">Air Jordan 1 Mid SE</li>
+                <li class="list-group-item ">Air Jordan 1 Mid</li>
+                <li class="list-group-item ">Air Jordan 1 Retro High OG</li>
+                <li class="list-group-item ">Air Jordan 1 Retro High Reb</li>
+            </ul>
+            <a href="#!nike" class="list-group-item list-group-item-action" data-toggle="collapse"
+                aria-expanded="false"><b ng-click="nike()">Air Force 1</b> <span class="badge badge-dark"
+                    >6</span></a>
+            <ul class="list-group card-collapse" card-collapse" id="nike">
+                <li class="list-group-item ">NIKE AirForce 1</li>
+                <li class="list-group-item ">Air Force 1 lv8</li>
+                <li class="list-group-item ">Air Force 1 Crater Nature</li>
+                <li class="list-group-item ">Air Force 1 07 SE</li>
+                <li class="list-group-item ">Nike Air Force 1 '07 Premium <span
+                        class="badge badge-warning">Hot</span></li>
+                <li class="list-group-item ">Nike Air Force 1 '07 LV8 <span class="badge badge-danger">New</span>
+                </li>
+            </ul>
+            <a href="#color" class="list-group-item list-group-item-action " data-toggle="collapse"
+                aria-expanded="false"><b>Color</b><span class="badge badge-dark"> 8</span></a>
+            <ul class="list-group card-collapse" id="color">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <a href="">
+                            <li class="color" style="background-color: black;"></li>
+                            <p class="" style="margin: 10px;">Black</p>
+                        </a>
+                    </div>
+                    <div class="col-sm-3">
+                        <a href="">
+                            <li class="color" style="background-color: rgb(255, 59, 59);"></li>
+                            <p class="" style="margin: 10px;">Red</p>
+                        </a>
+                    </div>
+                    <div class="col-sm-3">
+                        <a href="">
+                            <li class="color" style="background-color: rgb(50, 122, 255);"></li>
+                            <p class="" style="margin: 10px;">Blue</p>
+                        </a>
+                    </div>
+                    <div class="col-sm-3">
+                        <a href="">
+                            <li class="color" style="background-color:  rgb(38, 177, 38);"></li>
+                            <p class="" style="margin: 10px;">Green</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <a href="">
+                            <li class="color" style="background-color: rgb(255, 255, 255);"></li>
+                            <p class="" style="margin: 10px;">White</p>
+                        </a>
+                    </div>
+                    <div class="col-sm-3">
+                        <a href="">
+                            <li class="color" style="background-color: rgb(255, 59, 121);"></li>
+                            <p class="" style="margin: 10px;">Pink</p>
+                        </a>
+                    </div>
+                    <div class="col-sm-3">
+                        <a href="">
+                            <li class="color" style="background-color: rgb(255, 142, 50);"></li>
+                            <p class="" style="margin: 10px;">Orang</p>
+                        </a>
+                    </div>
+                    <div class="col-sm-3">
+                        <a href="">
+                            <li class="color" style="background-color: rgb(123, 75, 2);"></li>
+                            <p class="" style="margin: 10px;">Brown</p>
+                        </a>
+                    </div>
+                </div>
+
+            </ul>
+
+        </div>
+        <article class="col-sm-9">
+            <div class="row">
+                <div class="col-sm-4 text-center product-content"
+                    ng-repeat="p in products | orderBy : sx | limitTo : amout : begin | filter : {name : find } : false">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="./Image/{{p.img}}" alt="" class="imgproduct">
+                        </div>
+                        <div class="card-footer">
+                            <a class="content-product" href="">{{p.name}}
+                                <h5>{{p.price|currency}}</h5>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-hd" ng-click="more()">{{titleMore}}</button>
+            </div>
+
+        </article>
+    </div>
+</div>
